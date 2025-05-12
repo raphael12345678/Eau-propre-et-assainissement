@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #333;
+    padding: 15px 30px;
+}
+
+.navbar img {
+    height: 100px;
+    width: 100px;
+}
+
+#Github{
+    height: 75px;
+    width: 75px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 50px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+}
+
+.nav-links a:hover {
+    background-color: #575757;
+    border-radius: 5px;
+}
+
+h1{
+    color: red;
+    font-size: 40px;
+    text-align: center;
+    text-decoration: underline;
+}
