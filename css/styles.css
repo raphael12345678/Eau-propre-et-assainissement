@@ -1,6 +1,7 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
+    overflow-y: scroll;
 }
 
 .navbar {
@@ -37,9 +38,61 @@ body {
     border-radius: 5px;
 }
 
+.scroll-to-top {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    background-color: #333;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    line-height: 30px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    text-decoration: none;
+    opacity: 0.5;
+    transition: opacity 0.3s;
+    z-index: 1000;
+}
+
+.scroll-to-top:hover {
+    opacity: 2;
+}
+
 h1{
     color: red;
     font-size: 40px;
     text-align: center;
     text-decoration: underline;
+}
+
+h2{
+    color: rgb(255, 153, 0);
+    font-size: 28px;
+    text-align: left;
+    margin-left: 5%;
+    margin-right: 5%;
+    text-indent: 1%;
+}
+
+p {
+    line-height: 1.8;
+    font-size: 16px;
+    color: #333333;
+    margin-bottom: 1.5em;
+    text-align: justify;
+    margin-left: 5%;
+    margin-right: 5%;
+    text-indent: 1%;
+}
+
+li {
+    line-height: 1.8;
+    font-size: 16px;
+    color: #333333;
+    margin-bottom: 1.5em;
+    text-align: justify;
+    margin-left: 5%;
+    margin-right: 5%;
 }
