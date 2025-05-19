@@ -82,8 +82,8 @@ p {
     color: #333333;
     margin-bottom: 1.5em;
     text-align: justify;
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-left: 100px;
+    margin-right: 100px;
     text-indent: 1%;
 }
 
@@ -93,6 +93,13 @@ li {
     color: #333333;
     margin-bottom: 1.5em;
     text-align: justify;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.carte img {
+    width: 90%;
+    height: auto;
     margin-left: 5%;
     margin-right: 5%;
 }
