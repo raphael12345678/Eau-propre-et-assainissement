@@ -31,11 +31,12 @@
                     <p>Les investissements dans les infrastructures et les installations sanitaires, la protection et la restauration des écosystèmes liés à l’eau et l’éducation à l’hygiène font partie des mesures nécessaires pour garantir l’accès universel à une eau potable sûre et abordable pour tous d’ici 2030. En outre, l’amélioration de l’efficacité de l’utilisation de l’eau est l’une des clés de la réduction du stress hydrique.</p>
                     <p>Des progrès ont été réalisés. Entre 2015 et 2022, la proportion de la population mondiale ayant accès à une eau potable gérée en toute sécurité est passée de 69 % à 73 %.</p>
                 </div>
-                <div>
-                    <a href="carte">
-                        <img src="../img/carte_eau_2020.png" alt="Image">
-                    </a>
+                <div id="slider">
+                    <img id="image" src="../img/carte_eau_2020.png" alt="Carte de l'eau 2020">
                 </div>
+
+                <!-- Lien vers le script JavaScript externe -->
+                <script src="../java/java.js"></script>
             </div>
 
             <h2>Pourquoi ?</h2>
@@ -60,8 +61,32 @@
             <p>La prise de conscience de ces rôles et leur mise en œuvre conduiront à des résultats bénéfiques pour tous et à une durabilité et une intégrité accrues pour les systèmes humains et écologiques.</p>
             <p>Vous pouvez également participer aux campagnes de la journée mondiale de l’eau et de la journée mondiale des toilettes, qui visent à fournir des informations et de l’inspiration pour agir sur les questions d’hygiène.</p>
             <a href="#" class="scroll-to-top">&#8679;</a>
+            
+            <form action="traitement.php" method="post">
+                <label for="nom">Nom complet :</label>
+                <input type="text" id="nom" name="nom" required>
+
+                <label for="email">Adresse e-mail :</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="type">Type de demande :</label>
+                <select id="type" name="type" required>
+                  <option value="">-- Choisissez une option --</option>
+                  <option value="signalement">Signaler un problème d’eau</option>
+                  <option value="inscription">M’inscrire à une campagne de sensibilisation</option>
+                </select>
+            
+                <label for="lieu">Lieu concerné :</label>
+                <input type="text" id="lieu" name="lieu" required>
+            
+                <label for="message">Détails (problème rencontré ou motivation à participer) :</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+            
+                <button type="submit">Envoyer</button>
+            </form>
+            
         
-        <header>
+        <footer>
             <nav class="navbar">
                 <a href="https://www.agenda-2030.fr/17-objectifs-de-developpement-durable/article/odd6-garantir-l-acces-de-tous-a-l-eau-et-a-l-assainissement-et-assurer-une?">
                     <img src = "../img/logo.png" alt = "logo_img">
@@ -73,6 +98,6 @@
                     <img id = "Github" src = "../img/Github.png" alt = "Github">
                 </a>
             </nav>
-        </header>
+        </footer>
     </body>
 </html>
