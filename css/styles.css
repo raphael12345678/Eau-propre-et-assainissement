@@ -2,6 +2,7 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
     overflow-y: scroll;
+    background: linear-gradient(to top, #a0d8f7, #e0f7fa);
 }
 
 .navbar {
@@ -76,6 +77,15 @@ h2{
     text-indent: 1%;
 }
 
+h3{
+    color: rgb(41, 108, 62);
+    font-size: 20px;
+    text-align: left;
+    margin-left: 5%;
+    margin-right: 5%;
+    text-indent: 1%;
+}
+
 p {
     line-height: 1.8;
     font-size: 16px;
@@ -102,4 +112,92 @@ li {
     height: auto;
     margin-left: 5%;
     margin-right: 5%;
+}
+
+form {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-color: green;
+    margin-left: 30%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#slider {
+    border-radius: 15%;
+    width: 100%;
+    height: 80%;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+#slider img {
+    width: 90%;
+    height: 90%;
+    object-fit: cover;
+    transition: opacity 0.1s ease-in-out;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 16px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  background-color: white;
+}
+
+caption {
+  font-weight: bold;
+  font-size: 1.4em;
+  padding: 10px;
+  color: #6a5e18;
+  background-color: #fcf6db;
+}
+
+thead th {
+  background-color: #f4eca5;
+  color: #4d4300;
+  padding: 10*2px;
+  border: 1px solid #dcd2a0;
+}
+
+thead tr:nth-child(2) th {
+  background-color: #fff3bc;
+}
+
+td, th {
+  padding: 8px;
+  text-align: center;
+  border: 1px solid #eee;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+td[style*="color:green"] {
+  font-weight: bold;
+}
+
+em {
+  color: #444;
+  font-style: italic;
 }
